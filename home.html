@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.cs">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+<!--Navbar Starts-->
+    <section class="hero">
+        <div class="hero-head">
+          <div class="container">
+            <nav class="navbar is-transparent is-size-4" style="color: black; background-color: transparent;" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                  <!--<a class="navbar-item" href="home.html">
+                    <img src="https://www.flaticon.com/svg/static/icons/svg/3050/3050228.svg" style="height: 120px; pAdd To Carting-top: 30px; pAdd To Carting-bottom: 30px;" alt="">
+                  </a>-->
+                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                  </a>
+                </div>
+              
+                <div id="navbarBasicExample" class="navbar-menu">
+                  <div class="navbar-start">
+                    <a class="navbar-item">
+                      Home
+                    </a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                      <a class="navbar-link">
+                        Categories
+                      </a>
+              
+                      <div class="navbar-dropdown">
+                        <a class="navbar-item " href="#fruits">
+                            Fresh Fruits
+                        </a>
+                        <a class="navbar-item ">
+                            Vegetables
+                        </a>
+                        <a class="navbar-item" href="#seafood">
+                            Seafood, Meat and Poultry
+                        </a>
+                        <a class="navbar-item">
+                            Snacks and Branded Foods
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                          Food Grains & Spices
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="panel-block">
+                            <p class="control has-icons-left">
+                              <input class="input" type="text" placeholder="Search">
+                              <span class="icon is-left">
+                                <img src="https://img.icons8.com/android/24/000000/search.png"/>
+                              </span>
+                            </p>
+                          </div>
+                    </div> 
+                    <a class="navbar-item">
+                        Contact us
+                      </a>
+                  </div>
+                </div>
+              </nav>
+          </div>
+        </div>
+<!--Navbar ends-->
+    </section>
+          <div class="banner">
+              <div class="xyz">
+            <img src="/img/markus-spiske-ZKNsVqbRSPE-unsplash.jpg" alt="">
+            <div class="leftb">
+                <!--
+                <p class="txt is-flex-desktop-only">
+                Your one stop 
+              </p>
+               <p class="txt is-flex-desktop-only">
+                solution for groceries
+                </p>-->
+            </div>
+            </div>
+          </div>
+    <br class="pc is-hidden-mobile">
+    <div class="container">
+        <br>
+        <strong class="text0 is-size-3">Featured Products</strong>
+        <p style="display:block; text-align: center; font-size: large;">Deals you just can't miss</p>
+    </div>
+    <br>
+<!--Slideshow Starts-->
+    <section class="afterhero">
+       <div class="container is-clipped">
+                <div id="slider">
+                  <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-16by9 is-covered">
+                        <img src="https://images.unsplash.com/photo-1506365069540-904bcc762636?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                          alt=""
+                        />
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="item__title">
+                        Peppers
+                      </div>
+                      <div class="item__description">
+                        500 g <br>
+                        MRP: Rs 200 <br><br>
+                        <button class="button is-rounded">Add To Cart<img src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-12.jpg" alt="" style="height:20px; margin-left: 5px; color:white">  </button>
+                      
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-16by9 is-covered">
+                        <img
+                          src="https://images.unsplash.com/photo-1590848791238-fb3596a2ba56?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                          alt=""
+                        />
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="item__title">
+                        Carrot
+                      </div>
+                      <div class="item__description">
+                        500 g <br>
+                        MRP: Rs 200 <br><br>
+                        <button class="button is-rounded">Add To Cart<img src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-12.jpg" alt="" style="height:20px; margin-left: 5px; color:white">  </button>
+                      
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-16by9 is-covered">
+                        
+                        <img
+                          src="https://images.unsplash.com/photo-1449300079323-02e209d9d3a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80"
+                          alt=""
+                        />
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="item__title">
+                        Cucumber
+                      </div>
+                      <div class="item__description">
+                        500 g <br>
+                        MRP: Rs 200 <br><br>
+                        <button class="button is-rounded">Add To Cart<img src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-12.jpg" alt="" style="height:20px; margin-left: 5px; color:white">  </button>
+                      
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-16by9 is-covered">
+                        <img
+                          src="https://images.unsplash.com/photo-1538843586417-c6a03b5230ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
+                          alt=""
+                        />
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="item__title">
+                        Pumpkin
+                      </div>
+                      <div class="item__description">
+                        500 g <br>
+                        MRP: Rs 200 <br><br>
+                        <button class="button is-rounded">Add To Cart<img src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-12.jpg" alt="" style="height:20px; margin-left: 5px; color:white">  </button>
+                      
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-16by9 is-covered">
+                        <img
+                          src="https://images.unsplash.com/photo-1508747934946-4707f5f8839a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80"
+                          alt=""
+                        />
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="item__title">
+                        Bitter Gourd
+                      </div>
+                      <div class="item__description">
+                        500 g <br>
+                        MRP: Rs 200 <br><br>
+                        <button class="button is-rounded">Add To Cart<img src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-12.jpg" alt="" style="height:20px; margin-left: 5px; color:white">  </button>
+                      
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-16by9 is-covered">
+                        <img
+                          src=https://images.unsplash.com/photo-1526346698789-22fd84314424?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                          alt=""
+                        />
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="item__title">
+                        Red Chilli
+                      </div>
+                      <div class="item__description">
+                        500 g <br>
+                            MRP: Rs 200 <br><br>
+                            <button class="button is-rounded">Add To Cart<img src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-12.jpg" alt="" style="height:20px; margin-left: 5px; color:white">  </button>
+                          
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-16by9 is-covered">
+                            <img
+                              src="https://images.unsplash.com/photo-1506807803488-8eafc15316c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80"
+                              alt=""
+                            />
+                          </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="item__title">
+                        Beetroot
+                      </div>
+                      <div class="item__description">
+                        500 g <br>
+                        MRP: Rs 200 <br><br>
+                            <button class="button is-rounded">Add To Cart<img src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-12.jpg" alt="" style="height:20px; margin-left: 5px; color:white">  </button>
+                          
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+<!--Slideshow ends-->
+              <br><br><br>
+<!--Categories Start-->
+        <div class="container"id="fruits">
+            <strong class="text0 is-size-3">Fresh Fruits</strong>
+            <br>
+<!--First row-->
+            <div class="columns">
+                <div class="column is-3">
+                    <div class="card">
+                        <div class="card-image">
+                          <figure class="image is-4by3">
+                            <img src="https://images.unsplash.com/photo-1575808142341-e39853744dbd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=842&q=80" alt="Placeholder image">
+                          </figure>
+                        </div>
+                        <div class="card-content">
+                          <div class="media">
+                            <div class="media-content">
+                              <p class="title is-6">Strawberry</p>
+                            </div>
+                          </div>
+                        <div class="content">
+                            500 g <br>
+                            MRP: Rs 200 <br><br>
+                            <button class="button is-rounded">Add To Cart<img src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-12.jpg" alt="" style="height:20px; margin-left: 5px; color:white">  </button>
+                          
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="card">
+                        <div class="card-image">
+                          <figure class="image is-4by3">
+                            <img src="https://images.unsplash.com/photo-1523472721958-978152f4d69b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Placeholder image">
+                          </figure>
+                        </div>
+                        <div class="card-content">
+                          <div class="media">
+                            <div class="media-content">
+                              <p class="title is-6">Orange</p>
+                            </div>
+                          </div>
+                        <div class="content">
+                            500 g <br>
+                            MRP: Rs 200 <br><br>
+                            <button class="button is-rounded">Add To Cart<img src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-12.jpg" alt="" style="height:20px; margin-left: 5px; color:white">  </button>
+                          <br>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="card">
+                        <div class="card-image">
+                          <figure class="image is-4by3">
+                            <img src="https://images.unsplash.com/photo-1425934398893-310a009a77f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80" alt="Placeholder image">
+                          </figure>
+                        </div>
+                        <div class="card-content">
+                          <div class="media">
+                            <div class="media-content">
+                              <p class="title is-6">Blueberry</p>
+                            </div>
+                          </div>
+                        <div class="content">
+                            500 g <br>
+                            MRP: Rs 200 <br><br>
+                            <button class="button is-rounded">Add To Cart<img src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-12.jpg" alt="" style="height:20px; margin-left: 5px; color:white">  </button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="card">
+                        <div class="card-image">
+                          <figure class="image is-4by3">
+                            <img src="https://images.unsplash.com/photo-1577003833619-76bbd7f82948?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Placeholder image">
+                          </figure>
+                        </div>
+                        <div class="card-content">
+                          <div class="media">
+                            <div class="media-content">
+                              <p class="title is-6">Mulberry</p>
+                            </div>
+                          </div>
+                        <div class="content">
+                            500 g <br>
+                            MRP: Rs 200 <br><br>
+                            <button class="button is-rounded">Add To Cart<img src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-12.jpg" alt="" style="height:20px; margin-left: 5px; color:white">  </button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+<!--First Row ends-->
+                
+            </div>
+            <div class="columns">
+                <div class="column is-3">
+                    <div class="card">
+                        <div class="card-image">
+                          <figure class="image is-4by3">
+                            <img src="https://images.unsplash.com/photo-1558870623-9d182aa8ef0a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Placeholder image">
+                          </figure>
+                        </div>
+                        <div class="card-content">
+                          <div class="media">
+                            <div class="media-content">
+                              <p class="title is-6">Apple</p>
+                            </div>
+                          </div>
+                        <div class="content">
+                            500 g <br>
+                            MRP: Rs 200 <br><br>
+                            <button class="button is-rounded">Add To Cart<img src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-12.jpg" alt="" style="height:20px; margin-left: 5px; color:white">  </button>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="card">
+                        <div class="card-image">
+                          <figure class="image is-4by3">
+                            <img src="https://images.unsplash.com/photo-1465120846441-761b22f43328?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Placeholder image">
+                          </figure>
+                        </div>
+                        <div class="card-content">
+                          <div class="media">
+                            <div class="media-content">
+                              <p class="title is-6">Cherry</p>
+                            </div>
+                          </div>
+                        <div class="content">
+                            500 g <br>
+                            MRP: Rs 200 <br><br>
+                            <button class="button is-rounded">Add To Cart<img src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-12.jpg" alt="" style="height:20px; margin-left: 5px; color:white">  </button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>   <br><br>
+<div class="container" style="display: block; text-align: center; justify-content: center;">
+  <button class="button is-rounded is-medium" >Click Here To Buy More</button>
+</div>
+<!--Category 2 Starts-->
+<section>
+<br>
+    <div class="container"id="seafood">
+      <strong class="text0 is-size-3">Sea Food, Poultry & Meat</strong>
+      <br>
+<!--First row-->
+      <div class="columns">
+          <div class="column is-3">
+              <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img src="https://images.unsplash.com/photo-1587486913049-53fc88980cfc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="Placeholder image">
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="media">
+                      <div class="media-content">
+                        <p class="title is-6">Eggs</p>
+                      </div>
+                    </div>
+                  <div class="content">
+                      500 g <br>
+                      MRP: Rs 200 <br><br>
+                      <button class="button is-rounded">Add To Cart<img src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-12.jpg" alt="" style="height:20px; margin-left: 5px; color:white">  </button>
+                    
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="column is-3">
+              <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img src="https://images.unsplash.com/photo-1547424450-75ec164925ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Placeholder image">
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="media">
+                      <div class="media-content">
+                        <p class="title is-6">Sausage</p>
+                      </div>
+                    </div>
+                  <div class="content">
+                      500 g <br>
+                      MRP: Rs 200 <br><br>
+                      <button class="button is-rounded">Add To Cart<img src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-12.jpg" alt="" style="height:20px; margin-left: 5px; color:white">  </button>
+                    <br>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="column is-3">
+              <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img src="https://images.unsplash.com/photo-1583456156686-bccc0b9362f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Placeholder image">
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="media">
+                      <div class="media-content">
+                        <p class="title is-6">Steak</p>
+                      </div>
+                    </div>
+                  <div class="content">
+                      500 g <br>
+                      MRP: Rs 200 <br><br>
+                      <button class="button is-rounded">Add To Cart<img src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-12.jpg" alt="" style="height:20px; margin-left: 5px; color:white">  </button>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="column is-3">
+              <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img src="https://images.unsplash.com/photo-1600564044700-e7aa7a46ec5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Placeholder image">
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="media">
+                      <div class="media-content">
+                        <p class="title is-6">Shrimp</p>
+                      </div>
+                    </div>
+                  <div class="content">
+                      500 g <br>
+                      MRP: Rs 200 <br><br>
+                      <button class="button is-rounded">Add To Cart<img src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-12.jpg" alt="" style="height:20px; margin-left: 5px; color:white">  </button>
+                    </div>
+                  </div>
+              </div>
+          </div>
+<!--First Row ends-->
+          
+      </div>
+      <div class="columns">
+          <div class="column is-3">
+              <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img src="https://images.unsplash.com/photo-1566575167524-1b8b9c66c30d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80" alt="Placeholder image">
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="media">
+                      <div class="media-content">
+                        <p class="title is-6">Prawns</p>
+                      </div>
+                    </div>
+                  <div class="content">
+                      500 g <br>
+                      MRP: Rs 200 <br><br>
+                      <button class="button is-rounded">Add To Cart<img src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-12.jpg" alt="" style="height:20px; margin-left: 5px; color:white">  </button>
+                     </div>
+                  </div>
+              </div>
+          </div>
+          <div class="column is-3">
+              <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img src="https://images.unsplash.com/photo-1599055712783-0f505afa412a?ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80" alt="Placeholder image">
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="media">
+                      <div class="media-content">
+                        <p class="title is-6">Squid</p>
+                      </div>
+                    </div>
+                  <div class="content">
+                      500 g <br>
+                      MRP: Rs 200 <br><br>
+                      <button class="button is-rounded">Add To Cart<img src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-12.jpg" alt="" style="height:20px; margin-left: 5px; color:white">  </button>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="column is-3">
+            <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="https://images.unsplash.com/photo-1582284541563-586c3ba22d12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <p class="title is-6">Local Fish</p>
+                    </div>
+                  </div>
+                <div class="content">
+                    500 g <br>
+                    MRP: Rs 200 <br><br>
+                    <button class="button is-rounded">Add To Cart<img src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-12.jpg" alt="" style="height:20px; margin-left: 5px; color:white">  </button>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="column is-3">
+          <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://images.unsplash.com/photo-1546461525-01d3dbcd6a70?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-6">Mutton</p>
+                  </div>
+                </div>
+              <div class="content">
+                  500 g <br>
+                  MRP: Rs 200 <br><br>
+                  <button class="button is-rounded">Add To Cart<img src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-12.jpg" alt="" style="height:20px; margin-left: 5px; color:white">  </button>
+                <br>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section> 
+<!--Categories end-->
+    <section class="hero">
+        <div class="hero-body">
+          <div class="container">
+            
+          </div>
+        </div>
+    </section>
+
+    <section>
+      <div class="container">
+      <h1 class="text1 is-size-3">Know your Greens</h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat accusamus, quas est molestiae eum laborum amet dolorum reiciendis sequi harum sit quisquam autem dolorem blanditiis laboriosam voluptatum nemo facere. Impedit, veniam autem doloremque porro ab corporis saepe a, quasi ex in ipsa possimus, consectetur itaque quam voluptate. Repudiandae dolores autem laborum, inventore repellat sit beatae delectus quidem ut quia magnam, optio adipisci neque suscipit odit maiores laudantium iste sint reiciendis tenetur maxime? Blanditiis, magnam fuga. Porro atque itaque facere eaque inventore delectus fugiat eos nihil at repellat, velit, quia, quaerat rerum? Tempore officia accusamus, nulla accusantium obcaecati ratione omnis facilis!
+      </p>
+      <br><br>
+      <div class="columns">
+        <div class="column">
+          <img src="https://images.unsplash.com/photo-1535189487909-a262ad10c165?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=989&q=80" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora numquam atque quibusdam rem totam libero quam mollitia. Aperiam, harum. Magni quod tempore error optio libero totam reprehenderit corporis quidem fugit.</p>
+        </div>
+        <div class="column">
+          <img src="https://images.unsplash.com/photo-1585162535710-bb6a1bb0f1de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quos et vel sunt suscipit sit asperiores, cumque autem repudiandae fuga quidem libero laudantium eius nihil minus delectus mollitia laborum. Deleniti!</p>
+        </div>
+        <div class="column">
+          <img src="https://images.unsplash.com/photo-1595670002930-b30d563cf121?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1190&q=80" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quos et vel sunt suscipit sit asperiores, cumque autem repudiandae fuga quidem libero laudantium eius nihil minus delectus mollitia laborum. Deleniti!</p>
+        
+        </div>
+        <div class="column">
+          <img src="https://images.unsplash.com/photo-1556929361-bb46fb0b4e20?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quos et vel sunt suscipit sit asperiores, cumque autem repudiandae fuga quidem libero laudantium eius nihil minus delectus mollitia laborum. Deleniti!</p>
+        
+        </div>
+      </div>
+    </div>
+    </section> <br><br>
+    <div class="container" style="display: block; text-align: center; justify-content: center;">
+    <button class="button is-rounded is-medium" >Click Here To Buy Our Green veggies</button>
+  </div>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container">
+          
+        </div>
+      </div>
+  </section>
+    <footer style="background-color: #53B175; text-align:center; color: white; font-weight: normal;">
+      <div class="container">
+        <br><br>
+      <div class="columns">
+        <div class="column is-4">
+          <ul>
+            <p>Support</p> <br>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About US</a></li>
+            <li><a href="#">Carrers</a></li>
+            <li><a href="#">Refund & Returns</a></li>
+            <li><a href="#">Deliveries</a></li>
+          </ul>
+        </div>
+        <div class="column is-4">
+          <ul>
+            <p>Help</p> <br>
+            <li><a href="#">Shipping Information</a></li>
+            <li><a href="#">Search</a></li>
+            <li><a href="#">Information</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+        <div class="column is-4">
+          <ul>
+            <p>Support</p> <br>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About US</a></li>
+            <li><a href="#">Carrers</a></li>
+            <li><a href="#">Refund & Returns</a></li>
+            <li><a href="#">Deliveries</a></li>
+          </ul>
+        </div>
+      </div> <br>
+        <p>Copyright &copy; 2020 Made by SKNCOE</p>
+      </div>
+      <br><br>
+    </footer>
+   
+</body>
+</html>

@@ -1,0 +1,88 @@
+.h1 {
+    text-align: center;
+    color: whitesmoke;
+    font-size: large;
+}
+
+body{
+    overflow:hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.h2 {
+    text-align: center;
+    color: whitesmoke;
+    font-size: large;
+}
+
+.showcase {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section {
+    background-color: wheat;
+}
+.title {
+    color: whitesmoke;
+}
+
+.subtitle {
+    color: whitesmoke;
+}
+.footer {
+    bottom: 0;
+    width: 100vw;
+    padding: 0;
+    height: 80px;
+    line-height: 25px;
+    text-align: center;
+    background: #53B175;
+    color: whitesmoke;
+    padding-top: 2rem;
+  }
+  
+  .footer a {
+    padding: 0rem 1rem 1rem 1rem;
+    color: lightgrey;
+  }
+  
+  .footer a i {
+    font-size: 1.5rem;
+    padding: 0px 10px;
+  }
+  
+  .footer a .nav-item {
+    color: whitesmoke;
+  }
+
+  .hero{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url('https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  /*modal */
+  
+  .modal-card-title{
+    color:#000;
+  }
+   
+  .modal-card-body h1{
+    color:#53B175;
+  }
+  .modal-card-body h2{
+    color:#53B175;
+  }
+
+  .modal button{
+    background-color: #53B175;
+  }

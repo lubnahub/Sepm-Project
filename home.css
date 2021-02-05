@@ -1,0 +1,75 @@
+.navbar-item:hover{
+color: #53B175 !important;
+
+}
+.navbar-link:hover{
+    color: #53B175 !important; 
+}
+
+.banner img{
+    background-size: cover;
+}
+
+.panel-block p{
+    background-color: transparent;
+}
+.button{
+    background-color:  #53B175;
+    color: white;
+}
+
+.card:hover{
+    background: #e1e1e1
+    border-top: 2px solid #53B175;
+}
+
+.text0{
+    display: block;
+    text-align: center;
+    font-weight:bolder;
+    color:#53B175;
+}
+
+.afterhero{
+    margin-left:50px;
+    margin-right:50px;
+}
+
+.card{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.leftb{
+    position: absolute;
+    top: 275px;
+    left: 16px;
+    margin-left: 30px;
+    font-size:60px;
+    text-align: left;
+}
+.xyz {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+ul{
+
+    text-align: center;
+    justify-content: center;
+}
+
+ul a{
+    color: white;
+}
+ul a:hover{
+    color:none;
+}
+
+.text1{
+    display: block;
+    text-align: left;
+    font-weight:bolder;
+    color:#53B175;
+}

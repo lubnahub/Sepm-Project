@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Giant Foodmart</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.css">
+    <link rel="stylesheet" href="/login.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script defer src="/main.js"></script>
+</head>
+
+<body>
+        <section class="hero  is-fullheight">
+            <div class="hero-head">
+                <br><br>
+                <nav class="navbar">
+                    <div class="container">
+                        <div class="navbar-brand">
+                            <a class="navbar-item" href="../">
+                                <img src="assests\groceries.png" alt="">
+                            </a>
+                            <span class="navbar-burger burger" data-target="navbarMenu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </div>
+                        <div id="navbarMenu" class="navbar-menu">
+                            <div class="navbar-end">
+                                <span class="navbar-item">
+                                    <a class="button is-white is-outlined" id="login_btn" href="#">
+                                        <span>Login</span>
+                                    </a>
+                                </span>
+                                <span class="navbar-item">
+                                    <a class="button is-white is-outlined" id="signin_btn" href="#">
+                                        <span>Sign Up</span>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="hero-body">
+              <div class="container">
+                <h1 class="title">
+                    Your one stop grocery store!
+                </h1>
+                <h2 class="subtitle">
+                    <p>
+                        Hello,customers! We are Giant Foodmart! We sell groceries and your kitchen cook-to items. We are here to provide your fresh and wholrsome grocery products. We rank at No. 10 in the entire state and it's just because of our potential customers; having
+                        faith and relying on us is what all we need to lead!
+                    </p>
+                </h2>
+              </div>
+            </div>
+<!--Modal for sign up-->
+<div class="modal"  role="dialog" id="modal1">
+    <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Grocery Store</p>
+          <button class="delete" aria-label="close" data-dismiss="modal">&times;</button>
+        </header>
+        <section class="modal-card-body"> 
+            <!--
+          <div class="columns is-multiline" style="overflow:hidden">
+              <div class="columns">
+                <div class="column left" style="padding-left:50px; padding-top:50px; padding-bottom: 50px;">
+                  <h2 class="title is-2">Grocery Store</h2>
+                  <h2 class="subtitle colored is-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, doloremque.</h2>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ex deleniti aliquam tempora libero excepturi vero soluta odio optio sed.</p>
+                </div>
+                <div class="column right has-text-left" style=" padding-right:50px; padding-top:50px; padding-bottom: 50px;">-->
+                  <h1 class="title is-3">Sign Up</h1>
+                  <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit</p><br>
+                  <form action="#" onsubmit="return validation()">
+                      <div class="field">
+                          <div class="control">
+                              <input id="user" type="text" class="input is-medium" placeholder="First Name"  autocomplete="off">
+                              <span id="fnerror" class="texterror" style="color:red"></span>
+                            </div>
+                          
+                      </div>
+                      <div class="field">
+                        <div class="control">
+                            <input id="lname" type="text" class="input is-medium" placeholder="Last Name"  autocomplete="off">
+                            <span id="lnerror" style="color:red"></span>
+                        </div>
+                    </div>
+                    <div class="field">
+                      <div class="control">
+                        <input id="Email" class="input is-medium" type="email" placeholder="E-mail" autocomplete="off">
+                        <span id="emailerror"  style="color:red"></span>
+                      </div>
+                    </div>
+                    <div class="field">
+                      <div class="control">
+                        <input id="password" class="input is-medium" type="text" placeholder="Password" autocomplete="off">
+                        <span id="passerror"  style="color:red"></span>
+                      </div>
+                    </div>
+                    <div class="field">
+                      <div class="control">
+                        <input id="confirmpassword" class="input is-medium" type="text" placeholder="Confirm Password" autocomplete="off">
+                        <span id="conpasserror"  style="color:red"></span>
+                      </div>
+                    </div>
+                    
+                   <button class="button is-block is-fullwidth is-medium" ><a href="home.html" style="color:#ffffff" target="_blank">Submit</a></button>
+                    <br />
+                    <small><em>Lorem ipsum dolor sit amet consectetur.</em></small>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </div>
+  </div>
+  <!--Modal for login-->
+  <div class="modal"  role="dialog" id="modal2">
+    <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Grocery Store</p>
+          <button class="delete" aria-label="close" data-dismiss="modal">&times;</button>
+        </header>
+        <section class="modal-card-body">
+            <!--
+          <div class="columns is-multiline" style="overflow:hidden; ">
+            
+              <div class="columns">
+                <div class="column left" style="padding-left:50px; padding-top:50px; padding-bottom: 50px;">
+                  <h2 class="title is-2">Grocery Store</h2>
+                  <h2 class="subtitle colored is-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, amet.</h2>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ex deleniti aliquam tempora libero excepturi vero soluta odio optio sed.</p>
+                </div>
+                <div class="column right" style="padding-right:50px; padding-top:50px; padding-bottom: 50px;">-->
+                  <h1 class="title is-3">Log in</h1>
+                  <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+                  <form>
+                    <div class="field">
+                      <div class="control">
+                        <input class="input is-medium" type="text" placeholder="E-mail">
+                      </div>
+                    </div>
+                    <div class="field">
+                      <div class="control">
+                        <input class="input is-medium" type="text" placeholder="Password">
+                      </div>
+                    </div>
+                    
+                    <button class="button is-block is-fullwidth is-medium"><a href="home.html" style="color:#ffffff" target="_blank">Submit</a></button>
+                    <br />
+                    <small><em>Lorem ipsum dolor sit amet consectetur.</em></small>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </section>
+    </div>
+    </div>
+            <div class="footer">
+                <p>Copyright &copy; 2020 Made by SKNCOE</p>
+            </div>
+    
+          </section>
+       <!-- <div class="container">
+            <h1>Your one stop grocery store!</h1>
+            <br>
+            <p>
+                Hello,customers! We are Giant Foodmart! We sell groceries and your kitchen cook-to items. We are here to provide your fresh and wholrsome grocery products. We rank at No. 10 in the entire state and it's just because of our potential customers; having
+                faith and relying on us is what all we need to lead!
+            </p>
+            <br>
+            <br>
+
+            <a href="https://unsplash.com/photos/stpjHJGqZyw">
+                <img class="showcase" src="/assests/homepic.jfif" width="300" height="100">
+
+            </a>
+            <br>
+
+        </div>-->
+
+        <script type="text/javascript">
+          function validation(){
+            var user=document.getElementById('user').value;
+            var lname=document.getElementById('lname').value;
+            var pass=document.getElementById('password').value;
+            var Email=document.getElementById('Email').value;
+            var confirmpassword=document.getElementById('confirmpassword').value;
+              if(user=='') {
+                  document.getElementById('fnerror').innerHTML="** Name is required";
+                  return false;
+              }
+
+              if((user.length<=2)  || (user.length>20)){
+                document.getElementById('fnerror').innerHTML="** First Name should be between 2 and 20 characters.";
+                return false;
+              }
+              
+              if(!(isNaN(user))){
+                document.getElementById('fnerror').innerHTML="** Only characters are allowed";
+                return false;
+              }
+
+              if(lname=='' || lname ==null) {
+                  document.getElementById('lnerror').innerHTML="**Last Name is required";
+                  return false;
+              }
+               
+              if(Email=='' || Email==null) {
+                  document.getElementById('emailerror').innerHTML="** Email is required";
+                  return false;
+              }
+
+              if(Email.indexOf('@')<=0){
+                document.getElementById('emailerror').innerHTML="** Invalid Email address";
+                  return false;
+              }
+              if(pass=='') {
+                  document.getElementById('passerror').innerHTML="** Password is required";
+                  return false;
+              }
+              
+              if((pass.length<=2)  || (pass.length>20)){
+                document.getElementById('passerror').innerHTML="** Password should be between 2 and 20 characters.";
+                return false;
+              }
+              if(confirmpassword=='') {
+                  document.getElementById('conpasserror').innerHTML="** Please confirm Password";
+                  return false;
+              }
+              if(pass!=confirmpassword){
+              document.getElementById('conpasserror').innerHTML="**Passwords dont match.";
+                return false;
+            }
+            }
+        
+        </script>
+</body>
+
+</html>
